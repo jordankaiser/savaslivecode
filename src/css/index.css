@@ -11,10 +11,91 @@
  * Note that this uses PostCSS which always nests rules
  * with a `&` prefix.
  **/
-body {
+/* body {
   background: #ffefff;
 
   & h1 {
     color: #fe0923;
   }
+} */
+
+.container {
+  background-color: #DBEAFE;
+  padding: 20px;
+}
+
+.sizes {
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(2, 150px);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  
+  /* 500px or larger */
+  @media (min-width: 500px) {
+    /* desktop styles */
+  }
+}
+.sizes div:hover {
+  background-color: #60A5FA;
+}
+
+.sizes div {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#shirt-types {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.submit {
+  background-color: #1E40AF;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+.clear {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+h1 {
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+input {
+  padding: 10px;
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.message {
+  background-color: #D1FAE5;
+  padding: 10px;
+  color: black;
 }

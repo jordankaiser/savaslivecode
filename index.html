@@ -8,7 +8,61 @@
     <body>
         <!-- TODO: delete the following div and get going! -->
         <div class="container">
-            <h1 class="text-center">Scratchpad</h1>
+          <h1>T-Shirt Form</h1>
+          <hr>
+          <form class="t-shirt-form" action="">
+            <fieldset>
+              <label for="name">Enter your name.</label>
+              <input id="name" type="text" placeholder="Enter your name...">
+  
+              <!-- TODO: Can we validate the number input to only ints -->
+              <!-- TODO: Figure out how to add default value to number input -->
+              <label for="count">Number of shirts</label>
+              <input id="count" type="number" value="Quantity of shirts">
+            </fieldset>
+
+            <div class="sizes">
+              <div>
+                <label for="small-shirt">Small</label>
+                <input id="small-shirt" name="shirt-size" value="Small" type="radio">
+              </div>
+              <div>
+                <label for="medium-shirt">Medium</label>
+                <input id="medium-shirt" name="shirt-size" value="Medium" type="radio">
+              </div>
+              <div>
+                <label for="large-shirt">Large</label>
+                <input id="large-shirt" name="shirt-size" value="Large" type="radio">
+              </div>
+              <div>
+                <label for="extra-large-shirt">Extra Large</label>
+                <input id="extra-large-shirt" name="shirt-size" value="Extra Large" type="radio">
+              </div>
+              <div>
+                <label for="double-xl-shirt">Double XL</label>
+                <input id="double-xl-shirt" name="shirt-size" value="Double XL" type="radio">
+              </div>
+            </div>
+
+            <div>
+              <label for="shirt-types">Select a shirt type</label>
+              <select name="shirt-types" id="shirt-types" placeholder="hello">
+                <option value="Short Sleeve">short sleeve</option>
+                <option value="Long Sleeve">long sleeve</option>
+                <option value="V Neck">v neck</option>
+                <option value="Tank Top">tank top</option>
+              </select>
+            </div>
+
+            <hr>
+
+            <div>
+              <button class="clear" type="button">Clear Fields</button>
+              <button class="submit" type="submit" value="Submit">Submit</button>
+            </div>
+
+            <div class="message"></div>
+          </form>
         </div>
 
         <script type="module" src="/src/js/index.js"></script>
